@@ -1,3 +1,4 @@
+
 const path = require('path');
 
 const toPath = (_path) => path.join(process.cwd(), _path);
@@ -9,12 +10,17 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/preset-create-react-app',
+    '@storybook/addon-interactions',
+    '@storybook/addon-a11y'
   ],
   core: {
     builder: {
       name: 'webpack5',
     },
   },
+ features: {
+   interactionsDebugger: true,
+ },
   webpackFinal: async (config) => {
     return {
       ...config,
