@@ -70,6 +70,7 @@
     "@storybook/testing-library": "^0.0.13",
     "axe-playwright": "^1.2.3",
     "chromatic": "^6.17.0",
+    "cross-env": "^7.0.3",
     "cypress": "^12.6.0",
     "msw": "^1.0.1",
     "msw-storybook-addon": "^1.7.0"
